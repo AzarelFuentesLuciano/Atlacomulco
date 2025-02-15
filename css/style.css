@@ -1,0 +1,97 @@
+:root
+{
+    /**CUSTOMS PROPIETERIS**/
+    --blanco: #ffffff; 
+    --obscuro: #212121;
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --gris: #757575;
+    --gobierno: #9D2449;
+    --mor:#AF272F
+}
+html
+{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after 
+    {
+        box-sizing: inherit;
+    }
+body
+{
+    /*font-size: 16rem; 1rem = 10px */
+    font-family: "Krub", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color:rgb(239, 245, 243);
+}
+.top
+{
+    background-color: var(--gobierno);
+    
+   
+}
+.top-order
+{
+    display: flex;
+    justify-content:space-between;
+    margin: 0 2rem 0 2rem;
+   
+}
+.nav img
+{
+   width: 18rem;
+   height: 5rem;
+}
+.titulo,
+.fecha
+{
+    color: var(--blanco);
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 1rem;
+}
+.nav
+{
+    background-color: var(--blanco);
+    margin: 0 3rem;
+}
+.navegacion-inicial
+{
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 768px)
+{
+    .navegacion-inicial
+    {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 2rem;
+    }
+    
+}
+.navegacion-inicial a
+{
+    display: block;
+    text-align: center;
+    color: var(--obscuro);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+}
+.navegacion-inicial a:hover
+{
+    background-color: var(--mor);
+    color: var(--blanco);
+    border-radius: .5rem;
+}
+.sombra
+{
+    -webkit-box-shadow: 0px 8px 9px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 8px 9px 1px rgba(0,0,0,0.75);
+box-shadow: 0px 8px 9px 1px rgba(0,0,0,0.75);
+}
