@@ -41,8 +41,8 @@ body
 }
 .nav img
 {
-   width: 18rem;
-   height: 5rem;
+   width: 13rem;
+   height: 3rem;
 }
 .titulo,
 .fecha
@@ -56,7 +56,7 @@ body
 .nav
 {
     background-color: var(--blanco);
-    margin: 0 3rem;
+    margin: 0 1rem;
 }
 .navegacion-inicial
 {
@@ -69,7 +69,7 @@ body
     {
         flex-direction: row;
         justify-content: space-around;
-        padding: 2rem;
+        padding: .5rem;
     }
     
 }
@@ -77,21 +77,67 @@ body
 {
     display: block;
     text-align: center;
-    color: var(--obscuro);
+    color: var(--gris);
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
-    padding: 1rem;
+    padding: .5rem;
+    align-items: center;
 }
 .navegacion-inicial a:hover
 {
     background-color: var(--mor);
     color: var(--blanco);
-    border-radius: .5rem;
+    border-radius: .3rem;
+    text-align: center;
+    padding: .5rem;
 }
 .sombra
 {
     -webkit-box-shadow: 0px 8px 9px 1px rgba(0,0,0,0.75);
 -moz-box-shadow: 0px 8px 9px 1px rgba(0,0,0,0.75);
 box-shadow: 0px 8px 9px 1px rgba(0,0,0,0.75);
+}
+.hero
+{
+    background-image: url(../img/Atlacomulco-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 410px;
+    position: relative;
+}
+.contenido-hero
+{
+    position: absolute;
+    background-color: rgba(0,0,0,.4);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.contenido-hero h2
+{
+    color: var(--blanco);
+    font-size: 6rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.boton
+{
+    background-color: #9D2449;
+    padding: 2rem;
+    color: var(--blanco);
+    font-size: 2rem;
+    text-decoration: none;
+    
+}
+.contenido-hero a:hover
+{
+    background-color: var(--blanco);
 }
