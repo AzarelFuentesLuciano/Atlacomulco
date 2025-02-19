@@ -15,6 +15,10 @@
 <body>
     <header class="top">
         <nav class="top-order">
+            <div class="clock">
+                <span id="time"></span>
+                <span id="date"></span>
+            </div>
             <h1 class="titulo">municipio de Atlacomulco</h1>
             <p class="fecha">vienes 14 de febrero </p>
         </nav>
@@ -36,8 +40,40 @@
 
         </div>
     </section>
+    <section>
+        <h3>enterate de los eventos y convocatorias</h3>
+    </section>
+    <section>
+        <h3>canales de atencion ciudadana</h3>
+    </section>
+    <section>
+        <h3>cabildo</h3>
+    </section>
+    <section>
+        <h3>tramites y servicios</h3>
+    </section>
+    <section>
+        <h3>transparencia y sistema anti corrupcion</h3>
+    </section>
+    <section>
+        <h3>otros sitios</h3>
+    </section>
+    <section>
+        <h3>contactanos</h3>
+    </section>
     <footer>
+    
         <p>todos los derechos reservados, Atlacomulco</p>
     </footer>
+    <script>
+        function startime()
+        {
+            var today= new Date(), hours =today.getHours, minutes = today.getMinutes();
+            date = today.getDate(), day = today.getDay(), month = today.getMonth();
+        
+            hours = (hours == 0) ? 12 : hours;
+            hours = (hours>12) ? hours -12 :hours;
+        }
+    </script>
 </body>
 </html> 
