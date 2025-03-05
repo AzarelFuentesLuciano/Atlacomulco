@@ -24,20 +24,62 @@ body
     font-family: "Krub", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-color:rgb(207, 205, 218);
+    
 }
 .top
 {
     background-color: var(--gobierno);
     
-   
 }
 .top-order
 {
     display: flex;
     justify-content:space-between;
     margin: 0 2rem 0 2rem;
-   
+    align-items: center;
+}
+/**amimacion del encabezado**/
+
+
+/**reloj**/
+.clockdate span:nth-child(1)
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--blanco);
+    font-size: 2rem;
+    font-weight: 700;
+}
+.clockdate span
+{
+    display: block;
+    font-weight: 1rem;
+    text-align: center;
+    font-family: 'Bellota', cursive;
+    color: var(--blanco);
+}
+.span:nth-child(1)
+{
+    position: relative;
+    width: 6rem;
+    line-height: 2.5rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    box-shadow: -1.5rem -1.5rem -1.5rem var(--blanco),
+    1.5rem 1.5rem 1.5rem var(--blanco),
+    inset -1.5rem -1.5rem 1.5rem var(--blanco),
+    inset 1.5rem 1.5rem 1.5rem var(--blanco);
+    color: var(--blanco);
+    border: .5rem solid transparent;
+
+}
+.span:nth-child(2)
+{
+    line-height: 7rem;
+    font-size: 2.6rem;
+    counter-reset:var(--blanco);
+    color: var(--blanco);
 }
 .nav img
 {
@@ -119,7 +161,7 @@ box-shadow: 0px 8px 9px 1px rgba(0,0,0,0.75);
     
 
 }
-.contenido-hero h2
+.contenido-hero h1
 {
     color: var(--blanco);
     font-size: 6rem;
@@ -141,9 +183,56 @@ box-shadow: 0px 8px 9px 1px rgba(0,0,0,0.75);
 {
     background-color: var(--blanco);
 }
-h3 
+h2
 {
     color: #757575;
     text-align: center;
     font-size: 4rem;
+}
+/**tramites y servicos**/
+
+
+.tramites-servicios
+{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 3rem;
+    margin: 4rem;
+    
+}
+.tramites
+{
+    -webkit-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.75);
+    width: 25rem;
+    height: 25rem;
+    text-align: center;
+
+}
+.tramites h3
+{
+    padding:2rem;
+    font-size: 2rem;
+}
+.tramites p
+{
+    font-size: 1.5rem;
+    margin: 1rem;
+    padding-bottom: 1rem;
+
+}
+.tramites a
+{
+    color: var(--blanco);
+    background-color:var(--gobierno);
+    font-size: 1.5rem;
+    padding: .2rem 1.6rem;
+    border-radius: .2rem;
+    text-decoration: none;
+}
+.tramites a:hover
+{
+    
 }
