@@ -9,6 +9,7 @@
     --gobierno: #9D2449;
     --mor:#AF272F
 }
+
 html
 {
     font-size: 62.5%;
@@ -21,11 +22,13 @@ html
 body
 {
     /*font-size: 16rem; 1rem = 10px */
-    font-family: "Krub", sans-serif;
+    font-family: "Rubik", sans-serif;
     font-weight: 400;
     font-style: normal;
     
+    
 }
+
 .top
 {
     background-color: var(--gobierno);
@@ -118,12 +121,7 @@ body
     counter-reset:var(--blanco);
     color: var(--blanco);
 }
-/**navegacion**/
-.nav img
-{
-   width: 13rem;
-   height: 3rem;
-}
+
 .titulo,
 .fecha
 {
@@ -133,79 +131,125 @@ body
     text-align: center;
     margin-top: .1rem;
 }
-.nav
+/**navegacion**/
+.nav-container
 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     background-color: var(--blanco);
-    margin: 0 1rem;
+    align-items: center;
+    padding: 0 3rem;
+}
+
+.nav-logo
+{
+    width: 11rem;
+    padding: .4rem 0;
+}
+.nav-logo img
+{
+    width: 100%;
+    object-fit: cover;
+}
+.nav-link-container
+{
+    padding: 1.6rem 0;
+}
+.nav-links
+{
     list-style: none;
 }
-.navegacion-inicial a
+.nav-links > .nav-link-items
 {
-    display: block;
-    text-align: center;
-    color: var(--gris);
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: 700;
-    padding: .5rem;
-    align-items: center;
-}
-.navegacion-inicial a:hover
-{
-    background-color: var(--mor);
-    color: var(--blanco);
-    border-radius: .3rem;
-    text-align: center;
-    padding: .6rem;
-}
-.navegacion-inicial li
-{
-    position: relative;
     display: inline-block;
-    text-align:justify;
+    margin: 0 2.5rem;
+    position: relative;
 }
-.navegacion-inicial li:hover ul
+.nav-links > .nav-link-items a
 {
-    display: block;
-    z-index: 23;
-    background-color: var(--gobierno);
-
-}
-.navegacion-inicial ul
-{
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0 auto;
-    justify-content: left;
-    background-color: #0097a7 ;
-}
-li .web
-{
-    color: var(--blanco);
-    text-align:justify;
-}
-.navegacion-inicial
-{
+    text-decoration: none;
     display: flex;
-    flex-direction: column;
+    padding: .2rem 0;
+    color: var(--gris);
+    font-weight: 500;
+    transition: 0.3s ease;
+    align-items: center;
+    font-size: 1.5rem;
 }
-@media (min-width: 768px)
+.nav-links > .nav-link-items a:hover
 {
-    .navegacion-inicial
-    {
-        flex-direction: row;
-        justify-content: space-around;
-        padding: .5rem;
-    }
+    color: var(--gobierno);
+}
+.nav-link-items > a > .fa-chevron-down
+{
+    display: inline-block;
+    height: 1.6rem;
+    width: 1.6rem;
+    margin-left: .8rem;
+    transition: 0.3s ease;
+    pointer-events: none;
+}
+.nav-link-items:hover > a > .fa-chevron-down
+{
+    transform: rotate(-180deg);
+}
+.nav-links > .nav-link-items > .dropdown-menu
+{
+    width: 200%;
+    position: absolute;
+    top: 70%;
+    left: -1.6rem;
+    border-radius: .9rem;
+    overflow: hidden;
+    background-color: var(--blanco);
+    transform: translateY(0);
+    transition: 0.3s ease;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-box-shadow: -1px 10px 17px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 10px 17px -3px rgba(0,0,0,0.75);
+    box-shadow: -1px 10px 17px -3px rgba(0,0,0,0.75);
+    z-index: 1;
+    padding: 0;
+    margin: 0 .2rem;
+}
+.nav-links> .nav-link-items:hover > .dropdown-menu
+{
+    transform: translateY(1rem);
+    visibility: visible;
+    opacity: 1;
     
 }
-
-.sombra
+.nav-links > .nav-link-items > .dropdown-menu > .dropdown-menu-item
 {
-    -webkit-box-shadow: 0px 8px 9px 1px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 8px 9px 1px rgba(0,0,0,0.75);
-box-shadow: 0px 8px 9px 1px rgba(0,0,0,0.75);
+    list-style: none;
+    
+}
+.nav-links > .nav-link-items > .dropdown-menu > .dropdown-menu-item > a{
+    color: #777;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s ease;
+    padding: .8rem;
+}
+.nav-links > .nav-link-items > .dropdown-menu > .dropdown-menu-item > a:hover
+{
+    color: var(--mor);
+    background-color: #f8cdda;
+}
+@media (max-width: 768px){
+    body
+    {
+        max-width: 768px;
+        overflow: hidden;
+    }
+    .nav-container
+    {
+        padding: 0 3rem;
+    }
+    
+    
 }
 .hero
 {
