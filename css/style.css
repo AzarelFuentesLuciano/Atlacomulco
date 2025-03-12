@@ -32,6 +32,7 @@ body
 .top
 {
     background-color: var(--gobierno);
+   
     
 }
 .top-order
@@ -180,6 +181,7 @@ body
 .nav-links > .nav-link-items a:hover
 {
     color: var(--gobierno);
+
 }
 .nav-link-items > a > .fa-chevron-down
 {
@@ -248,9 +250,73 @@ body
     {
         padding: 0 3rem;
     }
-    
-    
+    .nav-link-container
+    {
+        position: absolute;
+        right: 0;
+        width: 30rem;
+        height: 100%;
+        top: 0;
+        overflow-y: auto;
+        background-color: var(--gobierno);
+        z-index: 999;
+        padding: 1rem;
+        transition: 0.3s ease;
+    }
+    .nav-link-container .nav-links
+    {
+        padding: 0;
+    }
+    .nav-link-container > .nav-links > .nav-link-items
+    {
+        display: block;
+        margin: 0;
+    }
+   
+    .nav-link-container > .nav-links > .nav-link-items > a
+    {
+        color: var(--blanco);
+        padding: 2.4rem 1.6rem;
+        border-bottom: .1rem solid #ffffff20;
+        display: flex;
+        justify-content: space-between;
+
+    }  
+    .nav-links > .nav-link-items > .dropdown-menu
+    {
+        width: 100%;
+        position: relative;
+        opacity: 1;
+        visibility: visible;
+        border-radius: 0;
+        border-bottom: .1rem solid #ffffff20;
+        background-color: transparent;
+        transform: translateY(0px);
+        box-shadow: none;
+        padding: 0;
+        left: auto;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .nav-links > .nav-link-items:hover > .dropdown-menu
+    {
+        transform: translateY(0px);
+    }
+    .nav-links > .nav-link-items > .dropdown-menu > .dropdown-menu-item > a
+    {
+        color: #ffffff20;
+        border: none;
+    }
+    .nav-links > .nav-link-items > .dropdown-menu > .dropdown-menu-item > a:hover
+    {
+        color: var(--blanco);
+        
+    }
+
+
+
 }
+
 .hero
 {
     background-image: url(../img/Atlacomulco-1.jpg);
@@ -288,6 +354,7 @@ body
     color: var(--blanco);
     font-size: 2rem;
     text-decoration: none;
+    border: 2rem;
     
 }
 .contenido-hero a:hover
@@ -310,6 +377,7 @@ h2
     grid-template-rows: repeat(5, 1fr);
     gap: 3rem;
     margin: 4rem;
+   
     
 }
 .tramites
@@ -320,6 +388,7 @@ h2
     width: 25rem;
     height: 25rem;
     text-align: center;
+   border-radius: 1rem;
 
 }
 .tramites h3
@@ -351,3 +420,4 @@ h2
 {
     background-color: var(--mor);
 }
+
