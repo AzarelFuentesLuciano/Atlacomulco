@@ -80,17 +80,17 @@
             </div>
         </nav>
     </header>
-        <nav class="nav-container">
+        <nav class="nav-container sombra">
             <div class="nav-logo">
-                <a href="#">
-                    <img src="img/toponimio-185x291.png" alt="">
+                <a href="index.php">
+                    <img src="img/toponimio-185x291.png" alt="" >
                 </a>
             </div>
             <i class="fa-solid fa-bars open-menu"></i>
             <div class="nav-link-container">
                 <i class="fa-solid fa-xmark close-menu"></i>
                 <ul class="nav-links">
-                    <li class="nav-link-items"><a href="#">normatividad</a></li>
+                    <li class="nav-link-items"><a href="normatividad.php">normatividad</a></li>
                     <li class="nav-link-items dropdown-menu-branch"><a href="#" data-toggle="dropdown-menu">transparencia  <i class="fa-solid fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
                             <li class="dropdown-menu-item"><a href="#">aviso de privacidad</a></li>

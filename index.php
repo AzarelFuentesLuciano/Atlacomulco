@@ -1,5 +1,5 @@
 <?php
-require ' ./vistas/header.php';
+include_once ('header.php');
 ?>
 
     <section class="hero">
