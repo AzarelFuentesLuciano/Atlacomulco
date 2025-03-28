@@ -166,14 +166,11 @@ include_once ('header.php');
     <section>
         
     </section>
-    <footer>
-        <div>
-            <a href="#" class="mart">Yuri</a>
-        </div>
-       
+
+        <?php
+            include_once ('footer.php');
+        ?>
     
-        <p>todos los derechos reservados, Atlacomulco</p>
-    </footer>
     <script>
         function starTime()
         {
